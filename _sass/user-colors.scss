@@ -30,3 +30,17 @@ $white3: rgba(225, 225, 230, 1);
 // TEST: Add a custom color
 $my-custom-cat: #02375a;
 $my-custom-dog: #cafff3;
+
+// =============================================================================
+// HIGHLIGHT / MARK STYLES
+// Add a reusable highlight class for posts (use: <mark class="hl">text</mark>)
+// =============================================================================
+$highlight-bg: #750d8a;
+$highlight-color: #000;
+
+mark.hl, .hl {
+	background-color: $highlight-bg;
+	color: $highlight-color;
+	padding: 0 .15rem;
+	border-radius: 0.15rem;
+}

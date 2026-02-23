@@ -41,7 +41,7 @@ Near the halfway point of CSSE 1, I was creating a new repository, and I realize
 
 It was like doing a full system reset on myself!
 
-# Click the arrows below to scroll through some of the screenshots of the errors I encountered during this process!
+### Click the arrows below to scroll through some of the screenshots of the errors I encountered during this process!
 (I wish I had taken more screenshots, but I was too busy trying to fix the errors to remember to take them)
 
 <!-- markdownlint-disable MD033 MD013 -->
@@ -50,6 +50,7 @@ It was like doing a full system reset on myself!
 .carousel-wrapper { position: relative; }
 .image-gallery {
   display: flex;
+  align-items: center;
   gap: 12px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -57,11 +58,15 @@ It was like doing a full system reset on myself!
   padding: 8px 4px;
 }
 .image-gallery img {
-  height: 200px;
+  /* show full image without cropping */
+  height: auto;
+  max-height: 200px;
+  width: auto;
+  max-width: 90%;
   flex: 0 0 auto;
   border-radius: 10px;
   scroll-snap-align: start;
-  object-fit: cover;
+  object-fit: contain;
 }
 .image-gallery::-webkit-scrollbar { height: 10px; }
 .carousel-btn {
@@ -85,14 +90,14 @@ It was like doing a full system reset on myself!
 </style>
 
 <div class="carousel-wrapper">
-  <button class="carousel-btn left" aria-label="Scroll left">◀</button>
+  <button class="carousel-btn left" aria-label="Scroll left">◑</button>
   <div class="image-gallery" id="imageGallery">
     <img src="{{site.baseurl}}/images/FINAL/convert-notebook.png" alt="Convert notebook screenshot">
     <img src="{{site.baseurl}}/images/FINAL/required-file-not-found.png" alt="Required file not found screenshot">
     <img src="{{site.baseurl}}/images/FINAL/unable-to-locate-python.png" alt="Unable to locate python screenshot">
     <img src="{{site.baseurl}}/images/FINAL/create-fork.png" alt="permission to create fork screenshot">
   </div>
-  <button class="carousel-btn right" aria-label="Scroll right">▶</button>
+  <button class="carousel-btn right" aria-label="Scroll right">◐</button>
 </div>
 
 <script>
@@ -108,20 +113,15 @@ It was like doing a full system reset on myself!
 })();
 </script>
 <!-- markdownlint-enable MD033 MD013 -->
-
-samagna deshatty is da shawty <3
 ---
 
 ## 3. Deploying My Site
 
-I didn’t just write blogs — I learned how to manually publish them.
+I didn’t just write blogs — I learned how to manually publish them. I dug into how Jekyll builds my site, how GitHub Actions deploys it, and how to troubleshoot when things go wrong. I learned:
 
-I figured out:
-
-- How Jekyll builds my site  
 - How to read the GitHub Actions logs (and why they were yelling at me)  
 - Why my site was publishing to the wrong URL  
-- How to change the YAML file to ***fix*** the URL  
+- How to change the YAML file to ***fix*** the URL (AND WHY I NEEDED TO DO THAT)
 - And most importantly: how to keep my cool when the site wouldn’t load
 
 It was the first time I felt like I understood the *whole* pipeline — not just the parts I could see. I read every line of code in several files until I understood what part of the code was giving me errors.
@@ -142,10 +142,11 @@ It was the first time I saw my organization skills turn into something that help
 
 <!-- markdownlint-disable MD033 MD013 -->
 <style>
-/* Simple horizontal carousel: scrollable, snap, and arrow buttons */
+/* Simple horizontal carousel (second instance): show full images */
 .carousel-wrapper { position: relative; }
 .image-gallery {
   display: flex;
+  align-items: center;
   gap: 12px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -153,11 +154,15 @@ It was the first time I saw my organization skills turn into something that help
   padding: 8px 4px;
 }
 .image-gallery img {
-  height: 200px;
+  /* show full image without cropping */
+  height: auto;
+  max-height: 200px;
+  width: auto;
+  max-width: 90%;
   flex: 0 0 auto;
   border-radius: 10px;
   scroll-snap-align: start;
-  object-fit: cover;
+  object-fit: contain;
 }
 .image-gallery::-webkit-scrollbar { height: 10px; }
 .carousel-btn {
@@ -182,18 +187,17 @@ It was the first time I saw my organization skills turn into something that help
 
 <div class="carousel-wrapper">
   <button class="carousel-btn left" aria-label="Scroll left">◀</button>
-  <div class="image-gallery" id="imageGallery">
-    <img src="{{site.baseurl}}/images/FINAL/convert-notebook.png" alt="Convert notebook screenshot">
-    <img src="{{site.baseurl}}/images/FINAL/required-file-not-found.png" alt="Required file not found screenshot">
-    <img src="{{site.baseurl}}/images/FINAL/unable-to-locate-python.png" alt="Unable to locate python screenshot">
+  <div class="image-gallery" id="imageGallery2">
+    <img src="{{site.baseurl}}/images/FINAL/theme-poll.png" alt="screenshot of the poll we made to decide on a theme for our game">
+    <img src="{{site.baseurl}}/images/FINAL/level-base.png" alt="screenshot of the level base template I made for our game">
   </div>
   <button class="carousel-btn right" aria-label="Scroll right">▶</button>
 </div>
 
 <script>
-/* Small helper: buttons scroll the gallery by ~70% of its width */
+/* Small helper: buttons scroll the gallery by ~70% of its width (second instance) */
 (function(){
-  var gallery = document.getElementById('imageGallery');
+  var gallery = document.getElementById('imageGallery2');
   if(!gallery) return;
   var left = gallery.parentElement.querySelector('.carousel-btn.left');
   var right = gallery.parentElement.querySelector('.carousel-btn.right');

@@ -41,7 +41,8 @@ Near the halfway point of CSSE 1, I was creating a new repository, and I realize
 
 It was like doing a full system reset on myself!
 
-### Click the arrows below to scroll through some of the screenshots of the errors I encountered during this process!
+### Click the arrows below to scroll through some of the screenshots of the errors I encountered during this process
+
 (I wish I had taken more screenshots, but I was too busy trying to fix the errors to remember to take them)
 
 <!-- markdownlint-disable MD033 MD013 -->
@@ -90,14 +91,16 @@ It was like doing a full system reset on myself!
 </style>
 
 <div class="carousel-wrapper">
-  <button class="carousel-btn left" aria-label="Scroll left">◑</button>
+  <button class="carousel-btn left" aria-label="Scroll left">⋘</button>
   <div class="image-gallery" id="imageGallery">
     <img src="{{site.baseurl}}/images/FINAL/convert-notebook.png" alt="Convert notebook screenshot">
     <img src="{{site.baseurl}}/images/FINAL/required-file-not-found.png" alt="Required file not found screenshot">
     <img src="{{site.baseurl}}/images/FINAL/unable-to-locate-python.png" alt="Unable to locate python screenshot">
     <img src="{{site.baseurl}}/images/FINAL/create-fork.png" alt="permission to create fork screenshot">
+    <img src="{{site.baseurl}}/images/FINAL/ls.png" alt="progress of ls at some point in the process screenshot">
+    <img src="{{site.baseurl}}/images/FINAL/externally-managed-environment.png" alt="externally managed environment screenshot">
   </div>
-  <button class="carousel-btn right" aria-label="Scroll right">◐</button>
+  <button class="carousel-btn right" aria-label="Scroll right">⋙</button>
 </div>
 
 <script>
@@ -117,28 +120,40 @@ It was like doing a full system reset on myself!
 
 ## 3. Deploying My Site
 
-I didn’t just write blogs — I learned how to manually publish them. I dug into how Jekyll builds my site, how GitHub Actions deploys it, and how to troubleshoot when things go wrong. I learned:
+I dug into how Jekyll builds my site, how GitHub Actions deploys it, and how to 
+troubleshoot when things go wrong. I learned:
 
 - How to read the GitHub Actions logs (and why they were yelling at me)  
 - Why my site was publishing to the wrong URL  
 - How to change the YAML file to ***fix*** the URL (AND WHY I NEEDED TO DO THAT)
 - And most importantly: how to keep my cool when the site wouldn’t load
 
-It was the first time I felt like I understood the *whole* pipeline — not just the parts I could see. I read every line of code in several files until I understood what part of the code was giving me errors.
+It was the first time I felt like I understood the *whole* pipeline — not
+just the parts I could see. I read every line of code in *several* files
+until I understood what part of the code was giving me errors.
 
 ---
 
 ## 4. Getting the Class to Night at the Museum
 
-During the game-building unit, I found strength in myself by slowly stepping into a leadership role. I love to organize, and this role gave me a lot of opportunities.
+During the game-building unit, I found strength in myself by slowly stepping
+into a leadership role. I love to organize, and this role gave me a lot of opportunities.
 
 I made:
 
-- A base *[level requirements](https://docs.google.com/document/d/1qnGFbed-_j16Z0g5eUKDnKD-Fy6SLytzvBmvFRa2v8A/edit?tab=t.0#heading=h.sbpg7njbydck)* template  
+- A base
+*[level requirements](https://docs.google.com/document/d/1qnGFbed-_j16Z0g5eUKDnKD-Fy6SLytzvBmvFRa2v8A/edit?tab=t.0#heading=h.sbpg7njbydck)*
+template  
 - A clear system for level design  
-- A workflow that made our project feel more like a team effort and less like a group chat (because the group chat method [slack] proved useless)
+- A workflow that made our project feel more like a team effort and less like a
+ group chat (because the group chat method [slack] proved useless)
 
-It was the first time I saw my organization skills turn into something that helped other people, not just me. Richab, Chet, and I worked tirelessly to float around the room, helping everyone stay on track and making sure we were all on the same page. It was a lot of work, but it was also rewarding to see our project come together - even if the N@M game didn’t turn out the way we wanted it to.
+It was the first time I saw my organization skills turn into something that
+helped other people, not just me. Richab, Chet, and I worked tirelessly to
+float around the room, helping everyone stay on track and making sure we were
+ all on the same page. It was a lot of work, but it was also rewarding to see
+ our project come together - even if the N@M game didn’t turn out the way we 
+ wanted it to.
 
 <!-- markdownlint-disable MD033 MD013 -->
 <style>
@@ -186,12 +201,12 @@ It was the first time I saw my organization skills turn into something that help
 </style>
 
 <div class="carousel-wrapper">
-  <button class="carousel-btn left" aria-label="Scroll left">◀</button>
+  <button class="carousel-btn left" aria-label="Scroll left">◑</button>
   <div class="image-gallery" id="imageGallery2">
     <img src="{{site.baseurl}}/images/FINAL/theme-poll.png" alt="screenshot of the poll we made to decide on a theme for our game">
     <img src="{{site.baseurl}}/images/FINAL/level-base.png" alt="screenshot of the level base template I made for our game">
   </div>
-  <button class="carousel-btn right" aria-label="Scroll right">▶</button>
+  <button class="carousel-btn right" aria-label="Scroll right">◐</button>
 </div>
 
 <script>

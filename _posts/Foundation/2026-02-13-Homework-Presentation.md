@@ -10,7 +10,7 @@ kite-one: true
 
 Throughout this JavaScript fundamentals unit, I've worked on a series of homework assignments covering core programming concepts. Here's a complete collection of my work:
 
-| Topic | Date | Github Link | OCS Link | 💭 Reflection |
+| Topic | Date | Link | 💭 Reflection |
 | ------- | ------ | ------ | ------ |
 | 📊 Arrays | 01/07/26 | [View GitHub](https://github.com/Flora-Segale27/envelope/blob/main/_notebooks/JavaScriptLessons/2026-01-07-arrays-flora-segale.ipynb) | I learned its usefulness when organizing code and how easy it is to both create and break an array XD |
 | 🎯 Data Abstraction | 01/09/26 | [View GitHub](https://github.com/Flora-Segale27/envelope/blob/main/_notebooks/JavaScriptLessons/2026-01-09-data_abstraction.ipynb) | I learned about inheritance of classes, how to streamline redundant code, and utilize the parent and child classes |

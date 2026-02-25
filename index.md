@@ -51,7 +51,7 @@ Hi! My name is Flora Segale.
         .btn-yellow{ background:linear-gradient(135deg,#ffe08a,#ebc119); color:#3a2d05; }
         .btn-teal{ background:linear-gradient(135deg,#87f0b1,#0ecd44); color:#034d1c; }
 </style>
-### Games
+#### Games
 
 <div class="project-grid">
     <a href="{{site.baseurl}}/snake" style="text-decoration: none;">
@@ -71,7 +71,7 @@ Hi! My name is Flora Segale.
     </a>
 </div>
 
-### Blogs
+#### Blogs
 
 <div class="project-grid">
     <a href="{{site.baseurl}}/homework-blog" style="text-decoration: none;">

@@ -21,5 +21,5 @@ Throughout this JavaScript fundamentals unit, I've worked on a series of homewor
 | 📝 Strings | 01/27/26 | [View Notebook](https://github.com/Flora-Segale27/envelope/blob/main/_notebooks/JavaScriptLessons/2026-01-27-Strings-homework.ipynb) | I learned about string interpolation v.s. string contencation and how to contencate code :) |
 | 🚗 Classes and Methods | 01/27/26 | [View Notebook](https://github.com/Flora-Segale27/envelope/blob/main/_notebooks/JavaScriptLessons/2026-1-27-ClassesAndMethods-Lesson.ipynb) | I learned aout the composition of classes and methods, as well as what they're used for. Doing the homework was pretty fun |
 
-## Coming Soon...
-🚀 _More lessons on the way!_
+## Overall Refelection:
+Throughout this JavaScript fundamentals unit, I strengthened my ability to think logically, debug efficiently, and write cleaner, more intentional code. Each assignment built on the last, helping me understand how arrays, conditionals, JSON, and classes all connect to form real programs. By practicing data abstraction, nested logic, and object‑oriented design, I developed a clearer sense of how to structure code and model real‑world systems. Overall, this unit gave me a solid foundation in JavaScript and increased my confidence in reading, writing, and explaining core programming concepts.
